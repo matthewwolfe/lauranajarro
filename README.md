@@ -1,2 +1,1 @@
-# lauranajarro
-Laura Najarro's Website
+# Laura Najarro Personal Website

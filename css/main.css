@@ -1,0 +1,90 @@
+:root {
+  --primary-color: #486bf2;
+  --secondary-color: #fdf0f3;
+  --white-color: #ffffff;
+}
+
+body,
+a,
+button {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 32px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.white {
+  color: var(--white-color);
+}
+
+button {
+  font-size: 32px;
+  line-height: 36px;
+  padding: 18px 44px;
+}
+
+button.outlined {
+  background-color: transparent;
+  border: 3px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+section {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.justify-content-center {
+  justify-content: center;
+}
+
+/** Content **/
+
+.banner {
+  justify-content: center;
+}
+
+.banner.primary {
+  background-color: var(--primary-color);
+}
+
+.banner.secondary {
+  background-color: var(--secondary-color);
+}
+
+.banner.white {
+  background-color: var(--white-color);
+}
+
+.banner .content {
+  max-width: 1210px;
+}
+
+.banner .content nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 54px;
+}
+
+.banner .content nav a {
+  margin-left: 44px;
+  margin-right: 44px;
+}
+
+.banner .banner-svg {
+  width: 1210px;
+}
+
+.banner .banner-button {
+  margin-bottom: 84px;
+}
