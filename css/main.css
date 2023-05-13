@@ -68,13 +68,16 @@ section {
 }
 
 .banner .content {
+  display: flex;
+  flex-direction: column;
   max-width: 1210px;
+  width: 100%;
 }
 
 .banner .content nav {
   display: flex;
   justify-content: center;
-  padding-top: 54px;
+  margin-top: 48px;
 }
 
 .banner .content nav a {
@@ -83,7 +86,10 @@ section {
 }
 
 .banner .banner-svg {
-  width: 1210px;
+  align-self: center;
+  margin-top: 96px;
+  margin-bottom: 96px;
+  width: 980px;
 }
 
 .banner .banner-button {
