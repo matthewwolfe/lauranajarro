@@ -1,6 +1,7 @@
 :root {
   --primary-color: #486bf2;
   --secondary-color: #fdf0f3;
+  --tertiary-color: #fffd47;
   --white-color: #ffffff;
 }
 
@@ -35,6 +36,12 @@ button.outlined {
   background-color: transparent;
   border: 3px solid var(--secondary-color);
   color: var(--secondary-color);
+}
+
+footer {
+  background-color: var(--tertiary-color);
+  padding: 64px;
+  width: 1000%;
 }
 
 section {
