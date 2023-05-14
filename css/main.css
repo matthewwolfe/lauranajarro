@@ -1,8 +1,14 @@
 :root {
-  --primary-color: #486bf2;
-  --secondary-color: #fdf0f3;
-  --tertiary-color: #fffd47;
-  --white-color: #ffffff;
+  --color-primary: #486bf2;
+  --color-secondary: #fdf0f3;
+  --color-tertiary: #fffd47;
+  --color-white: #ffffff;
+
+  --color-text: #1a1a1a;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
 }
 
 body,
@@ -22,7 +28,7 @@ a:hover {
 }
 
 a.white {
-  color: var(--white-color);
+  color: var(--color-white);
 }
 
 button {
@@ -34,18 +40,55 @@ button {
 
 button.outlined {
   background-color: transparent;
-  border: 3px solid var(--secondary-color);
-  color: var(--secondary-color);
+  border: 3px solid var(--color-secondary);
+  color: var(--color-secondary);
 }
 
 footer {
-  background-color: var(--tertiary-color);
-  padding: 64px;
-  width: 1000%;
+  background-color: var(--color-tertiary);
+  width: 100%;
+}
+
+h1 {
+  color: var(--color-primary);
+  font-size: 84px;
+  font-weight: 100;
+  line-height: 92px;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+p {
+  color: var(--color-text);
+  font-size: 24px;
+  line-height: 32px;
+}
+
+p.align-right {
+  text-align: right;
+}
+
+p:first-of-type {
+  margin-block-start: 0;
+}
+
+p:last-of-type {
+  margin-block-end: 0;
 }
 
 section {
   display: flex;
+}
+
+.badge {
+  box-sizing: border-box;
+  display: block;
+  border: 1px solid var(--color-text);
+  border-radius: 64px;
+  font-size: 24px;
+  height: 72px;
+  line-height: 32px;
+  padding: 19 24px;
 }
 
 .flex {
@@ -56,6 +99,22 @@ section {
   justify-content: center;
 }
 
+.flex.justify-content-end {
+  justify-content: flex-end;
+}
+
+.grid {
+  display: grid;
+  gap: 128px;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.grid-item {
+  display: grid;
+  grid-column: span 1 / auto;
+}
+
 /** Content **/
 
 .banner {
@@ -63,15 +122,15 @@ section {
 }
 
 .banner.primary {
-  background-color: var(--primary-color);
+  background-color: var(--color-primary);
 }
 
 .banner.secondary {
-  background-color: var(--secondary-color);
+  background-color: var(--color-secondary);
 }
 
 .banner.white {
-  background-color: var(--white-color);
+  background-color: var(--color-white);
 }
 
 .banner .content {
@@ -84,7 +143,6 @@ section {
 .banner .content nav {
   display: flex;
   justify-content: center;
-  margin-top: 48px;
 }
 
 .banner .content nav a {
@@ -99,6 +157,22 @@ section {
   width: 980px;
 }
 
-.banner .banner-button {
-  margin-bottom: 84px;
+.content {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.portrait-photo {
+  margin-left: auto;
+  height: 320px;
+  width: 320px;
+}
+
+.badges {
+  justify-content: flex-end;
+  margin-bottom: 28px;
+}
+
+.badges .badge:first-of-type {
+  margin-right: 16px;
 }
