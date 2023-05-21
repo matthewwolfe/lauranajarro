@@ -3,6 +3,7 @@
   --color-secondary: #fdf0f3;
   --color-tertiary: #fffd47;
   --color-white: #ffffff;
+  --color-neutral-50: #f5f5f5;
 
   --color-text: #1a1a1a;
 }
@@ -114,9 +115,19 @@ section {
   width: 100%;
 }
 
+.grid.gap-48 {
+  gap: 48px;
+}
+
 .grid-item {
   display: grid;
   grid-column: span 1 / auto;
+}
+
+@media (max-width: 1024px) {
+  .grid-item {
+    grid-column: span 2 / auto;
+  }
 }
 
 /** Content **/
@@ -180,4 +191,17 @@ section {
 
 .badges .badge:first-of-type {
   margin-right: 16px;
+}
+
+/** My Projects **/
+
+.card {
+  background-color: var(--color-white);
+  height: 600px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.card.gray {
+  background-color: var(--color-neutral-50);
 }
