@@ -59,6 +59,10 @@ h1 {
   margin-bottom: 28px;
 }
 
+h1.white {
+  color: var(--color-white);
+}
+
 p {
   color: var(--color-text);
   font-size: 24px;
@@ -79,6 +83,10 @@ p:last-of-type {
 
 section {
   display: flex;
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 .badge {
@@ -115,8 +123,8 @@ section {
   width: 100%;
 }
 
-.grid.gap-48 {
-  gap: 48px;
+.grid.gap-56 {
+  gap: 56px;
 }
 
 .grid-item {
@@ -173,8 +181,8 @@ section {
 }
 
 .content {
-  padding-top: 72px;
-  padding-bottom: 72px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .portrait-photo {
@@ -204,4 +212,8 @@ section {
 
 .card.gray {
   background-color: var(--color-neutral-50);
+}
+
+.card img {
+  width: 100%;
 }
