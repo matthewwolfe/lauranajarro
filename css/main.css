@@ -318,6 +318,15 @@ footer .content {
     align-items: center;
     flex-direction: column;
   }
+
+  .afop {
+    order: 1;
+  }
+
+  .afop-image {
+    justify-content: center;
+    order: 2;
+  }
 }
 
 /* responsive mobile */
