@@ -111,15 +111,15 @@ p:last-of-type {
   flex-direction: column;
 }
 
-.flex.justify-content-center {
+.justify-content-center {
   justify-content: center;
 }
 
-.flex.justify-content-end {
+.justify-content-end {
   justify-content: flex-end;
 }
 
-.flex.justify-content-space-between {
+.justify-content-space-between {
   justify-content: space-between;
 }
 
