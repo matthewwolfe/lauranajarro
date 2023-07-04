@@ -38,10 +38,10 @@ button {
   border-radius: 64px;
   color: var(--color-white);
   cursor: pointer;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 36px;
-  padding: 20px 24px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 12px 24px;
 }
 
 button.outlined {
@@ -143,30 +143,12 @@ p:last-of-type {
   gap: 60px;
 }
 
-.col-gap-104 {
+.gap-26 {
   gap: 104px;
 }
 
-.grid {
-  display: grid;
-  gap: 128px;
-  grid-template-columns: repeat(2, 1fr);
-  width: 100%;
-}
-
-.grid.gap-56 {
-  gap: 56px;
-}
-
-.grid-item {
-  display: grid;
-  grid-column: span 1 / auto;
-}
-
-@media (max-width: 1024px) {
-  .grid-item {
-    grid-column: span 2 / auto;
-  }
+.gap-30 {
+  gap: 120px;
 }
 
 .mt-4 {
@@ -286,14 +268,14 @@ section.my-projects .content,
 section.design-background .content {
   margin: auto;
   max-width: 1240px;
-  padding-top: 72px;
-  padding-bottom: 72px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   max-width: 1240px;
   width: 100%;
 }
 
 section.projects {
-  max-width: 100%;
+  max-width: 1240px;
   padding-left: 0;
   padding-right: 0;
   padding-top: 112px;
@@ -305,7 +287,7 @@ section.projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 500px;
+  max-width: 420px;
   width: 100%;
 }
 
@@ -382,9 +364,5 @@ footer .content {
   .project-details {
     padding-left: 12px;
     padding-right: 12px;
-  }
-
-  .grid {
-    gap: 96px;
   }
 }
