@@ -336,6 +336,22 @@ footer .content {
 
 /* responsive mobile */
 @media (max-width: 600px) {
+  button {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 16px 24px;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
   nav {
     display: flex;
     justify-content: space-evenly;
@@ -345,5 +361,10 @@ footer .content {
     font-size: 20px;
     line-height: 28px;
     padding: 32px 0px;
+  }
+
+  .responsive-image {
+    width: 100%;
+    height: auto;
   }
 }
