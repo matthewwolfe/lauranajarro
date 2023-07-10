@@ -1,5 +1,6 @@
 :root {
   --color-primary: #486bf2;
+  --color-primary-dark: #3d5acc;
   --color-primary-light: #edf1ff;
   --color-secondary: #fdf0f3;
   --color-tertiary: #fffd47;
@@ -44,6 +45,10 @@ button {
   padding: 12px 24px;
 }
 
+button:hover {
+  background-color: var(--color-primary-dark);
+}
+
 button.outlined {
   background-color: transparent;
   border-radius: 48px;
@@ -55,6 +60,11 @@ button.outlined {
 button.outlined.primary {
   color: var(--color-primary);
   border-color: var(--color-primary);
+}
+
+button.outlined:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 h1 {
@@ -312,6 +322,51 @@ footer .content {
   width: 100%;
 }
 
+/* projects page */
+.projects-page {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-primary-light);
+  padding-top: 80px;
+  padding-bottom: 160px;
+}
+
+.projects-page .container {
+  display: flex;
+  flex-direction: column;
+  gap: 128px;
+  max-width: 1120px;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: calc(100% - 24px);
+}
+
+.projects-page .card-container {
+  display: grid;
+  gap: 128px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projects-page .card-container .card {
+  background-color: var(--color-white);
+  border-radius: 24px;
+  box-shadow: 0px 16px 40px 0px rgba(112, 144, 176, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+}
+
+.projects-page .card-container .card img {
+  height: auto;
+  width: 100%;
+}
+
+.projects-page .card-container .card p {
+  display: flex;
+  flex-grow: 1;
+}
+
 /* responsive */
 @media (max-width: 1240px) {
   .responsive-column {
@@ -326,6 +381,10 @@ footer .content {
   .afop-image {
     justify-content: center;
     order: 2;
+  }
+
+  .projects-page .card-container {
+    gap: 64px;
   }
 }
 
@@ -373,5 +432,9 @@ footer .content {
   .project-details {
     padding-left: 12px;
     padding-right: 12px;
+  }
+
+  .projects-page .card-container {
+    grid-template-columns: 1fr;
   }
 }
