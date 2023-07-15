@@ -370,6 +370,7 @@ footer .content a {
 }
 
 #detail-view {
+  display: none;
   position: fixed;
   inset: 0px;
   z-index: 1000;
