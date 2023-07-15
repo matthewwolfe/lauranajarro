@@ -184,7 +184,12 @@
               </div>
 
               <div class="flex">
-                <button>View project</button>
+                <button
+                  class="project-detail-button"
+                  data-image="project-detail-afop"
+                >
+                  View project
+                </button>
               </div>
             </div>
           </div>
@@ -204,7 +209,12 @@
                 </div>
 
                 <div class="flex">
-                  <button>View project</button>
+                  <button
+                    class="project-detail-button"
+                    data-image="project-detail-fresco"
+                  >
+                    View project
+                  </button>
                 </div>
               </div>
             </div>
@@ -216,6 +226,39 @@
                 width="402px"
                 height="618px"
               />
+            </div>
+          </div>
+
+          <div class="flex gap-26 responsive-column">
+            <div class="flex afop-image">
+              <img
+                class="responsive-image"
+                src="./images/project-rila.png"
+                width="670px"
+                height="384px"
+              />
+            </div>
+
+            <div class="flex column gap-6 project-details afop">
+              <div class="flex">
+                <h1>UI Re-design & New Feature</h1>
+              </div>
+
+              <div class="flex">
+                <p>
+                  Case study improving RILA's clients experience with current
+                  website.
+                </p>
+              </div>
+
+              <div class="flex">
+                <button
+                  class="project-detail-button"
+                  data-image="project-detail-rila"
+                >
+                  View project
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -317,5 +360,14 @@
         </div>
       </div>
     </footer>
+
+    <div id="detail-view">
+      <div id="detail-view-backdrop"></div>
+      <div id="image-container">
+        <img src="./images/project-detail-fresco.png" />
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
