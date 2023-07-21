@@ -5,8 +5,32 @@ const projectDetailButtons = document.querySelectorAll(
   '.project-detail-button'
 );
 
+let isOpen = false;
+
+function closeDetailView() {
+  detailViewImageContainer.innerHTML = '';
+  detailView.style.display = 'none';
+  document.body.style.overflow = 'initial';
+  isOpen = false;
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeDetailView();
+  }
+});
+
+document.addEventListener('click', (e) => {
+  console.log('in document click');
+  if (isOpen) {
+    closeDetailView();
+  }
+});
+
 projectDetailButtons.forEach((projectDetailButton) => {
   projectDetailButton.addEventListener('click', (e) => {
+    e.stopPropagation();
+
     detailViewImageContainer.innerHTML = '';
     const imageSrc = `./images/${e.target.getAttribute('data-image')}.png`;
 
@@ -16,14 +40,9 @@ projectDetailButtons.forEach((projectDetailButton) => {
     detailViewImageContainer.append(imageElement);
     document.body.style.overflow = 'hidden';
     detailView.style.display = 'flex';
-  });
-});
 
-document.addEventListener('keydown', (e) => {
-  console.log('here');
-  if (e.key === 'Escape') {
-    detailViewImageContainer.innerHTML = '';
-    detailView.style.display = 'none';
-    document.body.style.overflow = 'initial';
-  }
+    isOpen = true;
+
+    console.log('in button click');
+  });
 });
