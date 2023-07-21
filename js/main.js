@@ -20,8 +20,7 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-document.addEventListener('click', (e) => {
-  console.log('in document click');
+document.addEventListener('click', () => {
   if (isOpen) {
     closeDetailView();
   }
@@ -42,7 +41,5 @@ projectDetailButtons.forEach((projectDetailButton) => {
     detailView.style.display = 'flex';
 
     isOpen = true;
-
-    console.log('in button click');
   });
 });
