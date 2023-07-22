@@ -1,5 +1,6 @@
 const detailView = document.getElementById('detail-view');
 const detailViewImageContainer = document.getElementById('image-container');
+const resumeLink = document.getElementById('resume');
 
 const projectDetailButtons = document.querySelectorAll(
   '.project-detail-button'
@@ -42,4 +43,8 @@ projectDetailButtons.forEach((projectDetailButton) => {
 
     isOpen = true;
   });
+});
+
+resumeLink.addEventListener('click', () => {
+  window.open('./static/LauraNajarro-Resume.pdf', '_blank');
 });
