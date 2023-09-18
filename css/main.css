@@ -429,11 +429,13 @@ footer .content a {
     flex-direction: column;
   }
 
-  .afop {
+  .afop,
+  .fresco {
     order: 1;
   }
 
-  .afop-image {
+  .afop-image,
+  .fresco-image {
     justify-content: center;
     order: 2;
   }
@@ -488,7 +490,13 @@ footer .content a {
   section.projects {
     padding-left: 12px;
     padding-right: 12px;
+    padding-bottom: 64px;
     width: calc(100% - 24px);
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 16px;
   }
 
   .project-details {
@@ -498,5 +506,13 @@ footer .content a {
 
   .projects-page .card-container {
     grid-template-columns: 1fr;
+  }
+
+  .gap-21-mobile {
+    gap: 84px;
+  }
+
+  .project-detail-button {
+    width: 100%;
   }
 }
