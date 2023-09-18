@@ -69,6 +69,7 @@ h1 {
   color: var(--color-text);
   font-size: 56px;
   font-weight: 700;
+  letter-spacing: -1px;
   line-height: 60px;
   margin: 0;
 }
@@ -77,6 +78,7 @@ h2 {
   color: var(--color-text);
   font-size: 36px;
   font-weight: 600;
+  letter-spacing: -1px;
   line-height: 54px;
   margin: 0;
 }
@@ -85,6 +87,7 @@ h4 {
   color: var(--color-text);
   font-size: 24px;
   font-weight: 400;
+  letter-spacing: -1px;
   line-height: 36px;
   margin: 0;
 }
@@ -151,12 +154,20 @@ p:last-of-type {
   gap: 60px;
 }
 
+.gap-21 {
+  gap: 84px;
+}
+
 .gap-26 {
   gap: 104px;
 }
 
 .gap-30 {
   gap: 120px;
+}
+
+.gap-45 {
+  gap: 180px;
 }
 
 .mt-4 {
@@ -272,7 +283,15 @@ section.design-background {
   width: calc(100% - 24px);
 }
 
-section.my-projects .content,
+section.my-projects .content {
+  margin: auto;
+  justify-content: center;
+  max-width: 660px;
+  padding-top: 54px;
+  padding-bottom: 54px;
+  width: 100%;
+}
+
 section.design-background .content {
   margin: auto;
   max-width: 1240px;
@@ -287,7 +306,7 @@ section.projects {
   padding-left: 0;
   padding-right: 0;
   padding-top: 112px;
-  padding-bottom: 112px;
+  padding-bottom: 0px;
   width: 100%;
 }
 
@@ -297,6 +316,10 @@ section.projects {
   justify-content: center;
   max-width: 420px;
   width: 100%;
+}
+
+.project-details.climb-tracker-app {
+  max-width: 550px;
 }
 
 .design-background-text {

@@ -136,57 +136,95 @@
 
       <section class="my-projects" id="my-projects">
         <div class="flex column content gap-4">
-          <div class="flex">
-            <h2>My projects</h2>
-          </div>
+          <h2 class="text-align-center">My projects</h2>
 
-          <div class="flex column">
-            <p>
-              These three projects portray the start of my journey into the
-              world of UX/UI. During the last year, I have been
-              <strong
-                >re-designing the structure and UI of the website at the
-                organization I work for.</strong
-              >
-              After running usability tests and getting feedback from our team I
-              was able to iterate their insights and then implement those in
-              WordPress.
-            </p>
-
-            <p>
-              The second project <strong>"Fresco"</strong> is my capstone case
-              study done while I studied the
-              <strong>Google UX Design Certificate.</strong> The third project I
-              developed a case study with
-              <strong>real life RILA's clients</strong> by improving their
-              experience with current website and id eating a new feature.
-            </p>
-
-            <p>
-              Currently
-              <strong
-                >working on a real case study as a re searcher by conducting
-                usability tests</strong
-              >
-              with real users for a fitness app. During this project, I am
-              actively collaborating with front-end developers....stay tuned!
-            </p>
-          </div>
+          <p class="text-align-center">
+            I believe <strong>UX is not a cookie-cutter process.</strong
+            ><br />Check out my diverse design thinking journeys throughout
+            different challenges and projects…
+          </p>
         </div>
       </section>
 
       <section class="projects justify-content-center">
-        <div class="flex column gap-26">
-          <div class="flex gap-26 responsive-column">
+        <div class="flex column gap-45">
+          <div class="flex gap-21 justify-content-center responsive-column">
+            <div class="flex">
+              <div class="flex column gap-6 project-details climb-tracker-app">
+                <div class="flex">
+                  <h1>Climber Tracker App</h1>
+                </div>
+
+                <div class="flex">
+                  <p>
+                    Let's discover insights and pain points, from usability
+                    testing with real users!
+                  </p>
+                </div>
+
+                <div class="flex gap-2">
+                  <button
+                    class="project-detail-button"
+                    data-image="project-detail-climb-tracker"
+                  >
+                    View case study
+                  </button>
+
+                  <button
+                    class="outlined primary"
+                    onclick="window.open('https://youtu.be/y5USb2JEKmI');"
+                  >
+                    Watch Usability Test Video
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex">
+              <img
+                class="responsive-image"
+                src="./images/project-climb-tracker.png"
+                width="540px"
+                height="487px"
+              />
+            </div>
+          </div>
+
+          <div class="flex gap-21 responsive-column">
             <div class="flex afop-image">
               <img
                 class="responsive-image"
-                src="./images/project-afop-hs.png"
-                width="650px"
-                height="402px"
+                src="./images/project-visual-redesign.png"
+                width="620px"
+                height="auto"
               />
             </div>
 
+            <div class="flex column gap-6 project-details afop">
+              <div class="flex">
+                <h1>Website visual re-design</h1>
+              </div>
+
+              <div class="flex">
+                <p>
+                  I am currently working on re-designing Perinatal Health Equity
+                  Initiative's website and implementing in WordPress. (This is a
+                  project in process)
+                </p>
+              </div>
+
+              <div class="flex">
+                <button
+                  class="project-detail-button"
+                  data-image="project-detail-visual-redesign"
+                >
+                  View project
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-21 justify-content-center responsive-column">
             <div class="flex column gap-6 project-details afop">
               <div class="flex">
                 <h1>Afop H&S Programs</h1>
@@ -206,17 +244,37 @@
 
                 <button
                   class="outlined primary"
-                  onclick="window.open('https://www.youtube.com/watch?v=uoJ2Po_sYkQ');"
+                  onclick="window.open('https://afop.org/health-safety/');"
                 >
-                  Watch prototype
+                  View website
                 </button>
               </div>
             </div>
+
+            <div class="flex afop-image">
+              <img
+                class="responsive-image"
+                src="./images/project-afop-hs.png"
+                width="620px"
+                height="auto"
+              />
+            </div>
           </div>
 
-          <div class="flex gap-26 justify-content-center responsive-column">
+          <div class="flex gap-45 responsive-column">
             <div class="flex">
-              <div class="flex column gap-6 project-details">
+              <img
+                class="responsive-image"
+                src="./images/project-fresco.png"
+                width="402px"
+                height="618px"
+              />
+            </div>
+
+            <div class="flex">
+              <div
+                class="flex column gap-6 project-details justify-content-center"
+              >
                 <div class="flex">
                   <h1>Fresco Food App</h1>
                 </div>
@@ -244,78 +302,6 @@
                   </button>
                 </div>
               </div>
-            </div>
-
-            <div class="flex">
-              <img
-                class="responsive-image"
-                src="./images/project-fresco.png"
-                width="402px"
-                height="618px"
-              />
-            </div>
-          </div>
-
-          <div class="flex gap-26 responsive-column">
-            <div class="flex afop-image">
-              <img
-                class="responsive-image"
-                src="./images/project-rila.png"
-                width="670px"
-                height="384px"
-              />
-            </div>
-
-            <div class="flex column gap-6 project-details afop">
-              <div class="flex">
-                <h1>UI Re-design & New Feature</h1>
-              </div>
-
-              <div class="flex">
-                <p>
-                  Case study improving RILA's clients experience with current
-                  website.
-                </p>
-              </div>
-
-              <div class="flex">
-                <button
-                  class="project-detail-button"
-                  data-image="project-detail-rila"
-                >
-                  View project
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex gap-26 justify-content-center responsive-column">
-            <div class="flex">
-              <div class="flex column gap-6 project-details">
-                <div class="flex">
-                  <h1>Climber Tracker App</h1>
-                </div>
-
-                <div class="flex">
-                  <p>
-                    A mobile app for the rock climbing community. I am currently
-                    working on a round of usability tests (for a BETA version)
-                    with real rock climbers to understand their wants and pain
-                    points. Stay tuned...!
-                  </p>
-                </div>
-
-                <div class="flex"></div>
-              </div>
-            </div>
-
-            <div class="flex">
-              <img
-                class="responsive-image"
-                src="./images/project-climb-tracker.png"
-                width="540px"
-                height="487px"
-              />
             </div>
           </div>
         </div>
