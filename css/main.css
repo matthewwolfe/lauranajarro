@@ -490,7 +490,6 @@ footer .content a {
   section.projects {
     padding-left: 12px;
     padding-right: 12px;
-    padding-bottom: 64px;
     width: calc(100% - 24px);
   }
 
