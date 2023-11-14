@@ -306,7 +306,7 @@ section.projects {
   padding-left: 0;
   padding-right: 0;
   padding-top: 112px;
-  padding-bottom: 0px;
+  padding-bottom: 112px;
   width: 100%;
 }
 
@@ -430,12 +430,14 @@ footer .content a {
   }
 
   .afop,
-  .fresco {
+  .fresco,
+  .climb-tracker {
     order: 1;
   }
 
   .afop-image,
-  .fresco-image {
+  .fresco-image,
+  .climb-tracker-image {
     justify-content: center;
     order: 2;
   }
